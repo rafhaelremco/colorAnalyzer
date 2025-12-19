@@ -8,12 +8,22 @@
 
     <Button
         android:id="@+id/btnPickImage"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Pilih Gambar Sampel"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ambil dari Kamera"
+        app:layout_constraintTop_toBottomOf="@id/btnPickImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
 
     <ImageView
         android:id="@+id/imagePreview"
@@ -21,7 +31,7 @@
         android:layout_height="0dp"
         android:scaleType="fitCenter"
         android:background="#EEEEEE"
-        app:layout_constraintTop_toBottomOf="@id/btnPickImage"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenCamera"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.4"
